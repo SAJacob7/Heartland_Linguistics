@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Qumpellkano';
+  src: url('./assets/Qumpellkano.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;

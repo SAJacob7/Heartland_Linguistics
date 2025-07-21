@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import logo from './assets/logo.png'
+import { ReactTyped } from "react-typed";
 
 function App() {
   return (
@@ -13,11 +14,15 @@ function App() {
           alt ="Logo"
           className = "h-12 w-auto"
         />
-
         <a href="#about" className="hover:underline">Heartland Linguistics</a>
         <a href="#services" className="hover:underline">Services</a>
         <a href="#contact" className="hover:underline">Contact</a>
       </nav>
+
+      <h1 style={{ fontFamily: 'Qumpellkano' }}>
+        Heartland{" "}
+        <ReactTyped strings={["Linguistics"]} typeSpeed={100} loop />
+      </h1>
 
       <section id="about" className="pt-24 h-screen bg-gray-100 w-screen">
         <h2 className="text-2xl font-bold">Heartland Linguistics</h2>
