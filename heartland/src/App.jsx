@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import logo from './assets/logo.png'
+import lingTree from './assets/ling_tree.JPG';
 import { ReactTyped } from "react-typed";
 
 function App() {
@@ -33,10 +34,24 @@ function App() {
         <h2 className="text-2xl font-bold">Heartland Linguistics</h2>
         <p>Info blah blah.</p>
       </section>
-      <section id="services" className="pt-24 h-screen bg-white-100 w-screen">
-        <h2 className="text-2xl font-bold">Services</h2>
-        <p>Information and Words</p>
+      <section id="services" className="pt-24 h-screen bg-white w-screen">
+        <div className="flex items-center justify-between px-16 h-full">
+          <div className="w-1/2 pr-8">
+            <h2 className="text-2xl font-bold mb-4">Services</h2>
+            <p className="text-gray-700 text-lg">
+              Information and Words about what Heartland Linguistics offers. We specialize in blah blah and provide expert help in stuff.
+            </p>
+          </div>
+          <div className="w-1/2 pl-8 flex justify-center">
+            <img
+              src={lingTree}
+              alt="Linguistics Tree"
+              className="w-3/4 full h-auto rounded-lg shadow-md"
+            />
+          </div>
+        </div>
       </section>
+
       <section id="contact" className="pt-24 h-screen bg-gray-100 w-screen">
         <h2 className="text-2xl font-bold">About Me</h2>
         <p>More words</p>
