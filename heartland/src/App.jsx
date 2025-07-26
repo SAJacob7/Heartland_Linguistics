@@ -31,7 +31,7 @@ function App() {
     <div className="background">
       <nav className="navbar">
         <div className="left-section">
-          <a href="">
+          <a href="#">
           <img
             src ={logo}
             alt ="Logo"
@@ -44,7 +44,7 @@ function App() {
           <a href="#services" className="nav-tab">Services</a>
           <a href="#contact" className="nav-tab">Contact</a>
         </div>
-        <a href="#contact" className="booking-link">Booking</a>
+        <a href="#contact" className="booking-link">Book a Session</a>
       </nav>
       
 
