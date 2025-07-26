@@ -29,19 +29,21 @@ function App() {
 
   return (
     <div className="background">
-      <nav className="fixed top-0 left-0 right-0 bg-white-600 p-4 pl-8 flex items-center gap-6 justify-start z-50 ">
-        <a href="">
-        <img
-          src ={logo}
-          alt ="Logo"
-          className = "h-12 w-auto"
-        />
-        </a>
-        <a href="#about" className="font-black hover:text-[#593B02] transition-all duration-200 ease-in-out">Heartland Linguistics</a>
-        <a href="#services" className="font-black hover:text-[#593B02] transition-all duration-200 ease-in-out">Services</a>
-        <a href="#contact" className="font-black hover:text-[#593B02] transition-all duration-200 ease-in-out">Contact</a>
+      <nav className="navbar">
+        <div className="left-section">
+          <a href="">
+          <img
+            src ={logo}
+            alt ="Logo"
+            className = "h-12 w-auto"
+          />
+          </a>
+          <a href="#about" className="nav-tab">Heartland Linguistics</a>
+          <a href="#services" className="nav-tab">Services</a>
+          <a href="#contact" className="nav-tab">Contact</a>
+        </div>
+        <a href="#contact" className="booking-link">Booking</a>
       </nav>
-      <div className="fixed top-0 left-0 right-0 h-20 background z-40" />
       
 
       <header className="flex flex-col items-center justify-center h-screen">

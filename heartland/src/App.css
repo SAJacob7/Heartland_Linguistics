@@ -81,6 +81,40 @@ html, body {
   background-color: #F8F7F3;
 }
 
-.hover-text-color {
+.navbar {
+  position: fixed;
+  top: 1rem;
+  left: 48px;
+  right: 48px;
+  background-color: #ffffff88;
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.booking-link {
+  background-color: #F8F7F3;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+}
+
+.nav-tab {
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-tab:hover {
   color: #593B02;
 }
