@@ -38,6 +38,8 @@ function App() {
             className = "h-12 w-auto"
           />
           </a>
+
+          <div className="vertical-divider"></div>
           <a href="#about" className="nav-tab">Heartland Linguistics</a>
           <a href="#services" className="nav-tab">Services</a>
           <a href="#contact" className="nav-tab">Contact</a>
