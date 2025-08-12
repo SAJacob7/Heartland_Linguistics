@@ -80,6 +80,9 @@ html, body {
 .background {
   background-color: #F8F7F3;
 }
+.background-2 {
+  background-color: #4d91b3;
+}
 
 .navbar {
   position: fixed;
@@ -167,4 +170,44 @@ html, body {
   width: 1px;
   height: 2rem;
   background-color: #ffffff4e;
+}
+.important-words-color {
+  color: #862F3D;
+  font-size:1.2rem;
+  font-weight: 700;
+}
+footer {
+  background-color: #4d91b3;
+}
+
+.floating-text {
+  position: absolute;
+  font-size: 2rem;
+  color: #ffffff4e;
+  animation: float 20s infinite linear;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lang-0 { top: 10%; left: 15%; animation-delay: 0s; }
+.lang-1 { top: 25%; left: 70%; animation-delay: 2s; }
+.lang-2 { top: 65%; left: 20%; animation-delay: 4s; }
+.lang-3 { top: 80%; left: 60%; animation-delay: 6s; }
+.lang-4 { top: 15%; left: 85%; animation-delay: 8s; }
+.lang-5 { top: 70%; left: 10%; animation-delay: 10s; }
+.lang-6 { top: 20%; left: 40%; animation-delay: 12s; }
+.lang-7 { top: 75%; left: 75%; animation-delay: 14s; }
+.lang-8 { top: 30%; left: 25%; animation-delay: 16s; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
