@@ -91,7 +91,7 @@ function App() {
       <div className="hidden md:flex items-center justify-between w-full">
         <div className="flex items-center space-x-4">
           <a href="#">
-            <img src={color_logo} alt="Logo" className="h-18 w-auto" />
+            <img src={color_logo} alt="Logo" className="h-10 w-auto" />
           </a>
           <div className="flex space-x-4">
             <a href="#about" className="nav-tab">Heartland Linguistics</a>
@@ -179,7 +179,8 @@ function App() {
                 Heartland Linguistics is a family-owned language service provider specializing in
                 <strong className="important-words-color"> Kurdish, Arabic, and English. </strong>
                 Founded and operated by a mother-daughter team, we deliver
-                <strong className="important-words-color"> ATA-certified translation</strong> and professional interpretation for on-site, remote (Zoom), and recorded formats...
+                <strong className="important-words-color"> ATA-certified translation</strong> and professional interpretation for on-site, remote (Zoom), and recorded formats.
+                Our services include document, video, and audio translation, as well as real-time interpretation for legal, medical, business, and community settings. We are committed to providing accurate, culturally informed communication solutions.
               </p>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center">
@@ -232,14 +233,29 @@ function App() {
         {/* Bio Section */}
         <section id="bio" className="scroll-mt-24 w-full py-16 md:py-24 px-6 md:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl custom-playfair-italics mb-6">About Us</h2>
-          <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-            Dr. Hiba E. Gharib
-            Ph.D. in Language and Linguistics, University of Kansas
-            Dr. Hiba E. Gharib is an accomplished linguist, educator, and translator with over two decades of experience in higher education and cross-cultural communication. She earned her Ph.D. in Language and Linguistics from the University of Kansas, specializing in the semantics  in a comparison study between English, Kurdish and Arabic. Her research spans syntax, semantics, pragmatics, discourse analysis, and cross-linguistic studies, with numerous publications in peer-reviewed journals and academic books.
-            Dr. Gharib has taught at the University of Sulaimani for more than 16 years and currently serves as an adjunct instructor at Kansas City Kansas Community College. She has designed and delivered courses in linguistics, translation, advanced syntax, academic writing, and TESOL, working with diverse student populations and fostering critical thinking and civic engagement. Her teaching philosophy centers on inspiring curiosity, promoting analytical skills, and creating inclusive learning environments.
-            In addition to her academic career, Dr. Gharib is an experienced translator and interpreter, fluent in Kurdish, Arabic, and English, and certified in TESOL. She has collaborated with international organizations, NGOs, and government agencies, providing linguistic expertise in academic, medical, legal, and technical contexts. She is an active member of professional associations, including MICATA, ATA, and the Arab Translators Association, and has presented at numerous international conferences.
-            Dr. Gharib's unique blend of scholarly expertise, intercultural competence, and dedication to student success makes her a valuable contributor to any academic community.
-          </p>
+          <div className="max-w-5xl mx-auto">
+    <div className="bg-gray-50 rounded-xl shadow-lg p-8 md:p-12">
+      <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
+        Dr. Hiba E. Gharib - Lead Translator & Interpreter
+      </h3>
+
+      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+        Dr. Hiba E. Gharib brings over 20 years of expertise in translation, interpretation, and cross-cultural communication. Fluent in Kurdish, Arabic, and English, she holds a Ph.D. in Language and Linguistics from the University of Kansas, specializing in the comparative study of semantics across these three languages.
+      </p>
+
+      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+        Her professional experience spans academic, medical, legal, and technical fields, where she has worked with international organizations, NGOs, and government agencies to deliver precise, culturally informed language solutions.
+      </p>
+
+      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+        In addition to her translation and interpretation work, Dr. Gharib has an extensive background in higher education, having taught linguistics, translation, and TESOL courses to diverse audiences both in the U.S. and abroad.
+      </p>
+
+      <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+        A certified TESOL instructor and active member of MICATA, ATA, and the Arab Translators Association, Dr. Gharib is committed to accuracy, confidentiality, and bridging communication gaps for every client she serves.
+      </p>
+    </div>
+  </div>
         </section>
       </div>
 
