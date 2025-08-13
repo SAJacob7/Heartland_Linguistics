@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
 @font-face {
+  font-family: 'Playfair Italics';
+  src: url('./assets/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Playfair';
-  src: url('./assets/PlayfairDisplay-BoldItalic.ttf') format('truetype');
-  font-weight: normal;
+  src: url('./assets/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: medium;
   font-style: normal;
   font-display: swap;
 }
@@ -16,9 +24,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('./assets/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
+}
+
+.custom-playfair-italics {
+  font-family: 'Playfair Italics';
+  letter-spacing: 0.04em;
 }
 
 .custom-playfair {
@@ -41,36 +62,6 @@ h1 {
 
 h2 {
   color: #862F3D;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.fade-in.appear {
-  opacity: 1;
-}
-
-.from-left,
-.from-right {
-  opacity: 0;
-  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
-              transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.from-left {
-  transform: translateX(-50%);
-}
-
-.from-right {
-  transform: translateX(50%);
-}
-
-.from-left.appear,
-.from-right.appear {
-  transform: translateX(0);
-  opacity: 1;
 }
 
 html, body {
@@ -136,7 +127,6 @@ html, body {
   opacity: 1;
 }
 
-
 .nav-tab {
   font-weight: 900;
   font-size: 1.1rem;
@@ -173,8 +163,8 @@ html, body {
 }
 .important-words-color {
   color: #862F3D;
-  font-size:1.2rem;
   font-weight: 700;
+  font-family: 'Poppins SemiBold';
 }
 footer {
   background-color: #4d91b3;
@@ -207,4 +197,47 @@ footer {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* Text (bottom fade) */
+h2, p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.disappear {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Images (slide in from left) */
+.image {
+  opacity: 0;
+  transform: translateX(-50px); /* start off-screen left */
+  transition: all 0.6s ease-out;
+}
+
+.appear-from-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.disappear-to-right {
+  opacity: 0;
+  transform: translateX(50px); /* slide off to right */
+}
+
+
+.background {
+  background-image: url('./assets/background1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* stays in place while scrolling */
 }
