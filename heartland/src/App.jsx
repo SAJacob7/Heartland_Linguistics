@@ -149,7 +149,7 @@ function App() {
       {/* Home Section */}
       <header className="relative flex flex-col items-center justify-center min-h-[100vh] overflow-hidden">
         <div className="absolute inset-0 z-0">
-          {["English", "Arabic", "Kurdish", "English", "Arabic", "Kurdish", "English", "Arabic", "Kurdish"].map((lang, index) => (
+          {["English", "Arabic", "کوردی", "English", "عربي", "Kurdish", "English", "عربي", "کوردی"].map((lang, index) => (
             <span key={index} className={`floating-text lang-${index}`}>{lang}</span>
           ))}
         </div>
