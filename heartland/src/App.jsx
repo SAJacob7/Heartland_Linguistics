@@ -64,7 +64,18 @@ function App() {
       <div className="flex items-center justify-between px-16 h-full fade-in">
         <div className="w-1/2 pr-8">
           <h2 className="text-4xl mb-4 custom-playfair">
-            Heartland <ReactTyped strings={["Linguistics"]} typeSpeed={100} loop={false} />
+            Heartland <ReactTyped
+              strings={["Linguistics"]}
+              typeSpeed={100}
+              loop={false}
+              showCursor={true}
+              onComplete={() => {
+                const cursor = document.querySelector(".typed-cursor");
+                if (cursor) {
+                  cursor.style.display = "none";
+                }
+              }}
+          />
           </h2>
           <p className="text-gray-700 text-lg">
             Heartland Linguistics is a family-owned language service provider specializing in

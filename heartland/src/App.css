@@ -16,6 +16,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('./assets/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
@@ -136,7 +144,6 @@ html, body {
   opacity: 1;
 }
 
-
 .nav-tab {
   font-weight: 900;
   font-size: 1.1rem;
@@ -175,6 +182,7 @@ html, body {
   color: #862F3D;
   font-size:1.2rem;
   font-weight: 700;
+  font-family: 'Poppins SemiBold';
 }
 footer {
   background-color: #4d91b3;
