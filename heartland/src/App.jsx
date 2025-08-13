@@ -3,9 +3,10 @@ import logo from './assets/logo.png'
 import color_logo from './assets/color_logo.png'
 import lingTree from './assets/ling_tree.JPG';
 import { ReactTyped } from "react-typed";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     const appearOptions = {
       threshold: 0,
@@ -28,21 +29,63 @@ function App() {
 
   return (
     <div className="background">
-      {/* Navbar */}
-      <nav className="navbar flex flex-wrap justify-between items-center p-4 md:px-16 bg-white shadow-md sticky top-0 z-50">
+      <nav className="navbar bg-white shadow-md sticky top-0 z-50 p-4 md:px-16 flex justify-between items-center">
+      <div className="hidden md:flex items-center justify-between w-full">
         <div className="flex items-center space-x-4">
           <a href="#">
             <img src={color_logo} alt="Logo" className="h-18 w-auto" />
           </a>
-          <div className="hidden md:flex space-x-4">
+          <div className="flex space-x-4">
             <a href="#about" className="nav-tab">Heartland Linguistics</a>
             <a href="#services" className="nav-tab">Services</a>
             <a href="#bio" className="nav-tab">About Us</a>
           </div>
         </div>
-        <a href="#contact" className="booking-link hidden md:block">Contact</a>
-        {/* Mobile menu button (optional) */}
-        <button className="md:hidden text-2xl">☰</button>
+        <a href="#contact" className="booking-link">Contact</a>
+      </div>
+
+      <div className="md:hidden w-full flex justify-end relative">
+        <button
+          className="text-3xl focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle Menu"
+        >
+          ☰
+        </button>
+
+        {menuOpen && (
+          <div className="absolute right-0 top-full mt-2 w-40 bg-white bg-opacity-95 shadow-lg rounded-md py-2 z-50">
+            <a
+              href="#about"
+              className="block px-4 py-2 text-gray-800 hover:text-[#862F3D]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Heartland Linguistics
+            </a>
+            <a
+              href="#services"
+              className="block px-4 py-2 text-gray-800 hover:text-[#862F3D]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </a>
+            <a
+              href="#bio"
+              className="block px-4 py-2 text-gray-800 hover:text-[#862F3D]"
+              onClick={() => setMenuOpen(false)}
+            >
+              About Us
+            </a>
+            <a
+              href="#contact"
+              className="block px-4 py-2 text-gray-800 hover:text-[#862F3D]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </a>
+          </div>
+        )}
+      </div>
       </nav>
 
       {/* Hero Section */}
@@ -65,7 +108,7 @@ function App() {
       </header>
 
       {/* About Section */}
-      <section id="about" className="w-full py-16 md:py-24">
+      <section id="about" className="scroll-mt-24 w-full py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 gap-8 fade-in">
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 custom-playfair">
@@ -99,7 +142,7 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="w-full py-16 md:py-24 bg-gradient-to-b fade-in">
+      <section id="services" className="scroll-mt-24 w-full py-16 md:py-24 bg-gradient-to-b fade-in">
         <div className="text-center mb-12 px-6">
           <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold custom-playfair text-[#862F3D] tracking-wide animate-fade-in">
             Our Services
@@ -136,7 +179,7 @@ function App() {
       </section>
 
       {/* Bio Section */}
-      <section id="bio" className="w-full py-16 md:py-24 fade-in px-6 md:px-16">
+      <section id="bio" className="scroll-mt-24 w-full py-16 md:py-24 fade-in px-6 md:px-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl custom-playfair mb-6">About Us</h2>
         <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
           Dr. Hiba E. Gharib
