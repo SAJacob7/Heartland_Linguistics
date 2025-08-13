@@ -174,20 +174,20 @@ footer {
   position: absolute;
   font-size: 2rem;
   color: #ffffff4e;
-  animation: moveRightToLeft 20s linear infinite;
+  animation: moveRightToLeft 25s linear infinite;
   white-space: nowrap;
   pointer-events: none;
   z-index: 0;
 }
 
-.lang-0 { top: 12%; left: 0%; animation-delay: 0s; }
-.lang-1 { top: 25%; left: 0%; animation-delay: -2s; }
+.lang-0 { top: 12%; left: 0%; animation-delay: 0s; } 
+.lang-1 { top: 25%; left: 0%; animation-delay: -20s; }
 .lang-2 { top: 65%; left: 0%; animation-delay: -1s; }
-.lang-3 { top: 80%; left: 0%; animation-delay: -10s; }
-.lang-4 { top: 15%; left: 0%; animation-delay: -8s; }
-.lang-5 { top: 70%; left: 0%; animation-delay: -6s; }
+.lang-3 { top: 80%; left: 0%; animation-delay: -8s; }
+.lang-4 { top: 15%; left: 0%; animation-delay: -6s; }
+.lang-5 { top: 70%; left: 0%; animation-delay: -14s; }
 .lang-6 { top: 20%; left: 0%; animation-delay: -12s; }
-.lang-7 { top: 75%; left: 0%; animation-delay: -17s; }
+.lang-7 { top: 75%; left: 0%; animation-delay: -19s; }
 .lang-8 { top: 30%; left: 0%; animation-delay: -16s; }
 
 @keyframes moveRightToLeft {
