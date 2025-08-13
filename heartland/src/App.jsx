@@ -269,6 +269,31 @@ function App() {
           <div className="max-w-5xl mx-auto">
             <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
               <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
+                Saya Ahmed - Owner & CEO
+              </h3>
+
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                Saya A. founded Heartland Linguistics with a clear mission: to serve communities both locally and abroad by providing outstanding,
+                trustworthy language services delivered by reliable professionals. Fluent in Kurdish and recognized with a Gold Seal of Biliteracy,
+                Saya combines linguistic skill with a deep passion for bridging communication gaps and breaking down barriers.
+              </p>
+
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+              Currently pursuing her Doctor of Pharmacy degree and consistently earning Dean's Honor Roll status,
+              Saya brings exceptional attention to detail—sharpened through her experience as a pharmacy intern—to every client interaction.
+              As President of the International Pharmacy Student Club at her university, she revitalized the organization in a single summer, demonstrating her vision, leadership, and ability to transform ideas into results.
+              </p>
+
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+              What sets Heartland Linguistics apart is its foundation as a
+              family-run business with first-hand experience in the challenges of cross-language communication.
+              Saya's global upbringing and extensive travel have shaped her into a true global citizen, dedicated to building long-term relationships with clients and delivering solutions that are accurate, culturally informed, and deeply personal.
+              </p>
+            </div>
+          </div>
+          <div className="max-w-5xl mx-auto pt-15">
+            <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
                 Dr. Hiba E. Gharib - Lead Translator & Interpreter
               </h3>
 
@@ -286,29 +311,6 @@ function App() {
 
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 A certified TESOL instructor and active member of MICATA, ATA, and the Arab Translators Association, Dr. Gharib is committed to accuracy, confidentiality, and bridging communication gaps for every client she serves.
-              </p>
-            </div>
-          </div>
-          <div className="max-w-5xl mx-auto pt-15">
-            <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
-              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
-                Saya Ahmed
-              </h3>
-
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-                chnage bio Dr. Hiba E. Gharib brings over 20 years of expertise in translation, interpretation, and cross-cultural communication. Fluent in Kurdish, Arabic, and English, she holds a Ph.D. in Language and Linguistics from the University of Kansas, specializing in the comparative study of semantics across these three languages.
-              </p>
-
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-                change bio Her professional experience spans academic, medical, legal, and technical fields, where she has worked with international organizations, NGOs, and government agencies to deliver precise, culturally informed language solutions.
-              </p>
-
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-                change bio In addition to her translation and interpretation work, Dr. Gharib has an extensive background in higher education, having taught linguistics, translation, and TESOL courses to diverse audiences both in the U.S. and abroad.
-              </p>
-
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                change bio A certified TESOL instructor and active member of MICATA, ATA, and the Arab Translators Association, Dr. Gharib is committed to accuracy, confidentiality, and bridging communication gaps for every client she serves.
               </p>
             </div>
           </div>

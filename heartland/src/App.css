@@ -244,7 +244,7 @@ h2, p {
 
 .image-border {
   border: 12px solid transparent;
-  border-image: url('./assets/border.JPG') 30 round;
+  border-image: url('./assets/blue2.jpg') 30 round;
 }
 
 .text-shadow {
