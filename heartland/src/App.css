@@ -241,3 +241,8 @@ h2, p {
   background-position: center;
   background-attachment: fixed; /* stays in place while scrolling */
 }
+
+.image-border {
+  border: 12px solid transparent;
+  border-image: url('./assets/border.JPG') 30 round;
+}

@@ -1,5 +1,8 @@
 import './App.css'
 import logo from './assets/logo.png'
+import kurdish_contract from './assets/HL_Kurdish_Contract_25-2.pdf'
+import english_contract from './assets/HL_English_Contract_25-2.pdf'
+import arabic_contract from './assets/HL_Arabic_Contract_25-2.pdf'
 import color_logo from './assets/color_logo.png'
 import lingTree from './assets/ling_tree.JPG';
 import { ReactTyped } from "react-typed";
@@ -228,34 +231,87 @@ function App() {
               Specific service requests—including scope, deadlines, format, and location—will be detailed in individual service orders agreed upon by both parties.
             </p>
           </div>
+          <div className="mt-12 text-center px-6">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <a
+                href={english_contract}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#862F3D] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#a13c4d] transition cursor-pointer"
+              >
+                Download Contract - English
+              </a>
+
+              <a
+                href={kurdish_contract}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#862F3D] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#a13c4d] transition cursor-pointer"
+              >
+                Download Contract - Kurdish
+              </a>
+
+              <a
+                href={arabic_contract}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#862F3D] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#a13c4d] transition cursor-pointer"
+              >
+                Download Contract - Arabic
+              </a>
+            </div>
+          </div>
         </section>
 
         {/* Bio Section */}
         <section id="bio" className="scroll-mt-24 w-full py-16 md:py-24 px-6 md:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl custom-playfair-italics mb-6">About Us</h2>
           <div className="max-w-5xl mx-auto">
-    <div className="bg-gray-50 rounded-xl shadow-lg p-8 md:p-12">
-      <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
-        Dr. Hiba E. Gharib - Lead Translator & Interpreter
-      </h3>
+            <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
+                Dr. Hiba E. Gharib - Lead Translator & Interpreter
+              </h3>
 
-      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-        Dr. Hiba E. Gharib brings over 20 years of expertise in translation, interpretation, and cross-cultural communication. Fluent in Kurdish, Arabic, and English, she holds a Ph.D. in Language and Linguistics from the University of Kansas, specializing in the comparative study of semantics across these three languages.
-      </p>
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                Dr. Hiba E. Gharib brings over 20 years of expertise in translation, interpretation, and cross-cultural communication. Fluent in Kurdish, Arabic, and English, she holds a Ph.D. in Language and Linguistics from the University of Kansas, specializing in the comparative study of semantics across these three languages.
+              </p>
 
-      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-        Her professional experience spans academic, medical, legal, and technical fields, where she has worked with international organizations, NGOs, and government agencies to deliver precise, culturally informed language solutions.
-      </p>
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                Her professional experience spans academic, medical, legal, and technical fields, where she has worked with international organizations, NGOs, and government agencies to deliver precise, culturally informed language solutions.
+              </p>
 
-      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-        In addition to her translation and interpretation work, Dr. Gharib has an extensive background in higher education, having taught linguistics, translation, and TESOL courses to diverse audiences both in the U.S. and abroad.
-      </p>
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                In addition to her translation and interpretation work, Dr. Gharib has an extensive background in higher education, having taught linguistics, translation, and TESOL courses to diverse audiences both in the U.S. and abroad.
+              </p>
 
-      <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-        A certified TESOL instructor and active member of MICATA, ATA, and the Arab Translators Association, Dr. Gharib is committed to accuracy, confidentiality, and bridging communication gaps for every client she serves.
-      </p>
-    </div>
-  </div>
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                A certified TESOL instructor and active member of MICATA, ATA, and the Arab Translators Association, Dr. Gharib is committed to accuracy, confidentiality, and bridging communication gaps for every client she serves.
+              </p>
+            </div>
+          </div>
+          <div className="max-w-5xl mx-auto pt-15">
+            <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
+                Saya Ahmed
+              </h3>
+
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                chnage bio Dr. Hiba E. Gharib brings over 20 years of expertise in translation, interpretation, and cross-cultural communication. Fluent in Kurdish, Arabic, and English, she holds a Ph.D. in Language and Linguistics from the University of Kansas, specializing in the comparative study of semantics across these three languages.
+              </p>
+
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                change bio Her professional experience spans academic, medical, legal, and technical fields, where she has worked with international organizations, NGOs, and government agencies to deliver precise, culturally informed language solutions.
+              </p>
+
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                change bio In addition to her translation and interpretation work, Dr. Gharib has an extensive background in higher education, having taught linguistics, translation, and TESOL courses to diverse audiences both in the U.S. and abroad.
+              </p>
+
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                change bio A certified TESOL instructor and active member of MICATA, ATA, and the Arab Translators Association, Dr. Gharib is committed to accuracy, confidentiality, and bridging communication gaps for every client she serves.
+              </p>
+            </div>
+          </div>
         </section>
       </div>
 
