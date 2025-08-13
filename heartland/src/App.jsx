@@ -118,28 +118,28 @@ function App() {
           <div className="absolute right-0 top-full mt-2 w-40 bg-white bg-opacity-95 shadow-lg rounded-md py-2 z-50">
             <a
               href="#about"
-              className="block px-4 py-2 text-gray-800 hover:text-[#862F3D]"
+              className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
               onClick={() => setMenuOpen(false)}
             >
               Heartland Linguistics
             </a>
             <a
               href="#services"
-              className="block px-4 py-2 text-gray-800 hover:text-[#862F3D]"
+              className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
               onClick={() => setMenuOpen(false)}
             >
               Services
             </a>
             <a
               href="#bio"
-              className="block px-4 py-2 text-gray-800 hover:text-[#862F3D]"
+              className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
               onClick={() => setMenuOpen(false)}
             >
               About Us
             </a>
             <a
               href="#contact"
-              className="block px-4 py-2 text-gray-800 hover:text-[#862F3D]"
+              className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
               onClick={() => setMenuOpen(false)}
             >
               Contact
@@ -199,7 +199,7 @@ function App() {
         {/* Services Section */}
         <section id="services" className="scroll-mt-24 w-full py-16 md:py-24 bg-gradient-to-b">
           <div className="text-center mb-12 px-6">
-            <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold custom-playfair-italics text-[#862F3D] tracking-wide animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold custom-playfair-italics text-[#7aabcc] tracking-wide animate-fade-in">
               Our Services
             </h2>
             <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-xl mx-auto">
@@ -207,19 +207,19 @@ function App() {
             </p>
           </div>
           <div className="box max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6">
-            <div className="bg-[#862F3D] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+            <div className="bg-[#7aabcc] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
               <h3 className="custom-playfair text-xl font-semibold text-white mb-2">On-Site Interpretation</h3>
               <p className="text-white text-sm">
                 Real-time oral interpretation services at your designated location.
               </p>
             </div>
-            <div className="bg-[#862F3D] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+            <div className="bg-[#7aabcc] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
               <h3 className="custom-playfair text-xl font-semibold text-white mb-2">Remote Interpretation</h3>
               <p className="text-white text-sm">
                 Seamless interpretation via phone or video conferencing platforms.
               </p>
             </div>
-            <div className="bg-[#862F3D] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
+            <div className="bg-[#7aabcc] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
               <h3 className="custom-playfair text-xl font-semibold text-white mb-2">Document Translation</h3>
               <p className="text-white text-sm">
                 Accurate translation of legal, medical, academic, and personal documents.
@@ -237,7 +237,7 @@ function App() {
                 href={english_contract}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#862F3D] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#a13c4d] transition cursor-pointer"
+                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer"
               >
                 Download Contract - English
               </a>
@@ -246,7 +246,7 @@ function App() {
                 href={kurdish_contract}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#862F3D] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#a13c4d] transition cursor-pointer"
+                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer"
               >
                 Download Contract - Kurdish
               </a>
@@ -255,7 +255,7 @@ function App() {
                 href={arabic_contract}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#862F3D] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#a13c4d] transition cursor-pointer"
+                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer"
               >
                 Download Contract - Arabic
               </a>
@@ -321,27 +321,32 @@ function App() {
       <footer id="contact" className="text-white pt-16 pb-8 px-6 md:px-20 lg:px-32">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-700 pb-10">
           <div>
-            <h3 className="custom-playfair text-2xl font-semibold mb-4 text-white">Contact</h3>
+            <h3 className="custom-playfair-italics text-2xl font-semibold mb-4 text-white">CONTACT</h3>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-center">
                 <span className="mr-3 text-white">Phone No.: </span>
-                <span>(123) 456-7890</span>
+                <span>(816) 255-4787</span>
+              </li>
+              <li className="flex items-center">
+                <span className="mr-3 text-white">Text: </span>
+                <span>(816) 715-3550</span>
               </li>
               <li className="flex items-center">
                 <span className="mr-3 text-white">Email: </span>
-                <span>blah.email.com</span>
+                <span>heartlandlinguistics@gmail.com</span>
               </li>
               <li className="flex items-center">
-                <span className="mr-3 text-white">Location: </span>
-                <span>OP, KS</span>
+                <span className="mr-3 text-white">Mailing Addr.: </span>
+                <span>15439 Glenwood Ave, Overland Park, KS 66223</span>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="custom-playfair text-2xl font-semibold mb-4 text-white">Connect</h3>
+            <h3 className="custom-playfair-italics text-2xl font-semibold mb-4 text-white">CONNECT</h3>
             <ul className="space-y-3 text-gray-300">
               <li>
-                <a href="#" className="hover:text-[#862F3D] transition">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/hiba-gharib-446512131/" target="_blank"
+                rel="noopener noreferrer" className="hover:text-[#334d5f] transition">LinkedIn</a>
               </li>
             </ul>
           </div>

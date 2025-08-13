@@ -61,7 +61,7 @@ h1 {
 }
 
 h2 {
-  color: #862F3D;
+  color: #334d5f;
 }
 
 html, body {
@@ -162,18 +162,18 @@ html, body {
   background-color: #ffffff4e;
 }
 .important-words-color {
-  color: #862F3D;
+  color: #7aabcc;
   font-weight: 700;
   font-family: 'Poppins SemiBold';
 }
 footer {
-  background-color: #4d91b3;
+  background-color: #7aabcc;
 }
 
 .floating-text {
   position: absolute;
   font-size: 2rem;
-  color: #d6d7d3;
+  color: #7aabcc;
   animation: moveRightToLeft 25s linear infinite;
   white-space: nowrap;
   pointer-events: none;
