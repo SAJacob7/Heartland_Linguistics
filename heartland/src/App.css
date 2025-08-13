@@ -53,11 +53,11 @@ body {
 }
 
 header {
-  background: radial-gradient(circle at center, #d1cec2, #dcdcdc);
+  background: #eeebe6;
 }
 
 h1 {
-  color: #F8F7F3;
+  color: #4b6388;
 }
 
 h2 {
@@ -173,7 +173,7 @@ footer {
 .floating-text {
   position: absolute;
   font-size: 2rem;
-  color: #ffffff4e;
+  color: #d6d7d3;
   animation: moveRightToLeft 25s linear infinite;
   white-space: nowrap;
   pointer-events: none;
@@ -245,4 +245,8 @@ h2, p {
 .image-border {
   border: 12px solid transparent;
   border-image: url('./assets/border.JPG') 30 round;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }

@@ -163,8 +163,8 @@ function App() {
             className="w-[200px] sm:w-[300px] md:w-[400px] opacity-30"
           />
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl custom-playfair-italics z-10 text-white text-center">
-          Heartland Linguistics
+        <h1 className="text-4xl sm:text-5xl md:text-6xl custom-playfair-italics z-10 text-[#4d91b3] text-center">
+          HEARTLAND LINGUISTICS
         </h1>
       </header>
       
