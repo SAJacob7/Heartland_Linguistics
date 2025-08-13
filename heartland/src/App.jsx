@@ -1,5 +1,6 @@
 import './App.css'
 import logo from './assets/logo.png'
+import color_logo from './assets/color_logo.png'
 import lingTree from './assets/ling_tree.JPG';
 import { ReactTyped } from "react-typed";
 import { useEffect } from 'react';
@@ -31,7 +32,7 @@ function App() {
       <nav className="navbar flex flex-wrap justify-between items-center p-4 md:px-16 bg-white shadow-md sticky top-0 z-50">
         <div className="flex items-center space-x-4">
           <a href="#">
-            <img src={logo} alt="Logo" className="h-10 w-auto" />
+            <img src={color_logo} alt="Logo" className="h-18 w-auto" />
           </a>
           <div className="hidden md:flex space-x-4">
             <a href="#about" className="nav-tab">Heartland Linguistics</a>
@@ -45,11 +46,18 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <header className="relative flex flex-col items-center justify-center min-h-[80vh] overflow-hidden">
+      <header className="relative flex flex-col items-center justify-center min-h-[100vh] overflow-hidden">
         <div className="absolute inset-0 z-0">
           {["English", "lang1", "lang2", "lang3", "lang4", "lang5", "lang6", "lang7", "lang8"].map((lang, index) => (
             <span key={index} className={`floating-text lang-${index}`}>{lang}</span>
           ))}
+        </div>
+        <div className="absolute z-10">
+          <img
+            src={logo}
+            alt="Logo"
+            className="w-[200px] sm:w-[300px] md:w-[400px] opacity-30"
+          />
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl custom-playfair z-10 text-white text-center">
           Heartland Linguistics
