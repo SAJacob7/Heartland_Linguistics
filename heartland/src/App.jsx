@@ -105,7 +105,7 @@ function App() {
               <a href="#bio" className="nav-tab">About Us</a>
             </div>
           </div>
-          <a href="#contact" className="booking-link">Contact</a>
+          <a href="#contact" className="contact">Contact</a>
         </div>
 
         {/* Mobile Navbar */}
