@@ -97,6 +97,7 @@ function App() {
             <img src={color_logo} alt="Logo" className="h-10 w-auto" />
           </a>
           <div className="flex space-x-4">
+            <div className="vertical-divider"></div>
             <a href="#about" className="nav-tab">Heartland Linguistics</a>
             <a href="#services" className="nav-tab">Services</a>
             <a href="#bio" className="nav-tab">About Us</a>

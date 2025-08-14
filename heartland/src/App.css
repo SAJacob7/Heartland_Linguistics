@@ -57,7 +57,7 @@ header {
 }
 
 h1 {
-  color: #4b6388;
+  color: #334d5f;
 }
 
 h2 {
@@ -69,7 +69,7 @@ html, body {
 }
 
 .background {
-  background-color: #F8F7F3;
+  background-color: #d3c49e;
 }
 .background-2 {
   background-color: #4d91b3;
@@ -159,7 +159,7 @@ html, body {
 .vertical-divider {
   width: 1px;
   height: 2rem;
-  background-color: #ffffff4e;
+  background-color: #d2d2d2d4;
 }
 .important-words-color {
   color: #7aabcc;
@@ -173,7 +173,7 @@ footer {
 .floating-text {
   position: absolute;
   font-size: 2rem;
-  color: #7aabcc;
+  color: #d2d2ce;
   animation: moveRightToLeft 25s linear infinite;
   white-space: nowrap;
   pointer-events: none;
@@ -244,9 +244,5 @@ h2, p {
 
 .image-border {
   border: 12px solid transparent;
-  border-image: url('./assets/blue2.jpg') 30 round;
-}
-
-.text-shadow {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  border-image: url('./assets/border.JPG') 30 round;
 }
