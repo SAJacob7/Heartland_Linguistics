@@ -56,11 +56,7 @@ header {
   background: #eeebe6;
 }
 
-h1 {
-  color: #334d5f;
-}
-
-h2 {
+h1, h2{
   color: #334d5f;
 }
 
@@ -158,8 +154,7 @@ html, body {
 
 .vertical-divider {
   width: 1px;
-  height: 2rem;
-  background-color: #ebebeb;
+  background-color: #334d5f;
 }
 .important-words-color {
   color: #7aabcc;

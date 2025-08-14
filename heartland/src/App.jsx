@@ -330,30 +330,30 @@ function App() {
 
       {/* Footer */}
       <footer id="contact" className="text-white pt-16 pb-8 px-6 md:px-20 lg:px-32 rounded-t-[4rem]">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-700 pb-10">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 border-b pb-10">
           <div>
-            <h3 className="custom-playfair-italics text-2xl font-semibold mb-4 text-white">CONTACT</h3>
+            <h4 className="custom-playfair-italics text-2xl font-semibold mb-4 text-white">CONTACT</h4>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-center">
-                <span className="mr-3 text-white">Phone No.: </span>
+                <span className="mr-3 text-white font-bold">Phone No.: </span>
                 <span>(816) 255-4787</span>
               </li>
               <li className="flex items-center">
-                <span className="mr-3 text-white">Text: </span>
+                <span className="mr-3 text-white font-bold">Text: </span>
                 <span>(816) 715-3550</span>
               </li>
               <li className="flex items-center">
-                <span className="mr-3 text-white">Email: </span>
+                <span className="mr-3 text-white font-bold">Email: </span>
                 <span>heartlandlinguistics@gmail.com</span>
               </li>
               <li className="flex items-center">
-                <span className="mr-3 text-white">Mail. Addr.: </span>
+                <span className="mr-3 text-white font-bold">Addr.: </span>
                 <span>15439 Glenwood Ave, Overland Park, KS 66223</span>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="custom-playfair-italics text-2xl font-semibold mb-4 text-white">CONNECT</h3>
+            <h4 className="custom-playfair-italics text-2xl font-semibold mb-4 text-white">CONNECT</h4>
             <ul className="space-y-3 text-gray-300">
               <li>
                 <a href="https://www.linkedin.com/in/hiba-gharib-446512131/" target="_blank"
