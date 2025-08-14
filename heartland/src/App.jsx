@@ -90,7 +90,7 @@ function App() {
 
   return (
     <div className="background">
-      <nav className="navbar bg-white shadow-md sticky top-0 z-50 p-4 md:px-16 flex justify-between items-center">
+<nav className="navbar flex flex-wrap justify-between items-center p-4 md:px-16 bg-white shadow-md sticky top-0 z-50">
       <div className="hidden md:flex items-center justify-between w-full">
         <div className="flex items-center space-x-4">
           <a href="#">
@@ -157,14 +157,14 @@ function App() {
             <span key={index} className={`floating-text lang-${index}`}>{lang}</span>
           ))}
         </div>
-        <div className="absolute z-10">
+        <div className="absolute">
           <img
             src={logo}
             alt="Logo"
             className="w-[200px] sm:w-[300px] md:w-[400px] opacity-30"
           />
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl custom-playfair-italics z-10 text-[#4d91b3] text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl custom-playfair-italics text-[#4d91b3] text-center">
           HEARTLAND LINGUISTICS
         </h1>
       </header>

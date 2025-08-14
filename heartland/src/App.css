@@ -173,7 +173,7 @@ footer {
 .floating-text {
   position: absolute;
   font-size: 2rem;
-  color: #d2d2ce;
+  color: #7aabcc;
   animation: moveRightToLeft 25s linear infinite;
   white-space: nowrap;
   pointer-events: none;
