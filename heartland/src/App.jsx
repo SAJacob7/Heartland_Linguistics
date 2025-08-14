@@ -82,7 +82,7 @@ function App() {
     });
   }, observerOptions);
 
-  const elements = document.querySelectorAll("h2, h3, p, .box, .image");
+  const elements = document.querySelectorAll("h2, h3, p, .box, .image, .image-border");
   elements.forEach(el => scrollObserver.observe(el));
 
   return () => elements.forEach(el => scrollObserver.unobserve(el));
