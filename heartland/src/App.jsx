@@ -82,7 +82,7 @@ function App() {
     });
   }, observerOptions);
 
-  const elements = document.querySelectorAll("h2, p, .box, .image");
+  const elements = document.querySelectorAll("h2, h3, p, .box, .image");
   elements.forEach(el => scrollObserver.observe(el));
 
   return () => elements.forEach(el => scrollObserver.unobserve(el));
@@ -214,13 +214,13 @@ function App() {
               </p>
             </div>
             <div className="bg-[#7aabcc] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
-              <h3 className="custom-playfair text-xl font-semibold text-white mb-2">REMOTE INTERPRETATION</h3>
+              <h3 className="custom-playfair-italics text-xl font-semibold text-white mb-2">REMOTE INTERPRETATION</h3>
               <p className="text-white text-sm">
                 Seamless interpretation via phone or video conferencing platforms.
               </p>
             </div>
             <div className="bg-[#7aabcc] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
-              <h3 className="custom-playfair text-xl font-semibold text-white mb-2">DOCUMENT TRANSLATION</h3>
+              <h3 className="custom-playfair-italics text-xl font-semibold text-white mb-2">DOCUMENT TRANSLATION</h3>
               <p className="text-white text-sm">
                 Accurate translation of legal, medical, academic, and personal documents.
               </p>
@@ -234,7 +234,7 @@ function App() {
           <div className="mt-12 text-center px-6">
             <div className="box flex flex-col sm:flex-row justify-center items-center gap-4">
               <a
-                href={english_contract}
+                href="https://docs.google.com/document/d/1ezcZdbvCTD9HjXcEIK4rBTvF0JJpbJ1Q/edit?usp=sharing&ouid=107691785626291737387&rtpof=true&sd=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer custom-playfair"
@@ -243,7 +243,7 @@ function App() {
               </a>
 
               <a
-                href={kurdish_contract}
+                href="https://docs.google.com/document/d/1c3hKJ7SQx1nASBmj-IYaWq0rNxtBbbtn/edit?usp=sharing&ouid=107691785626291737387&rtpof=true&sd=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer custom-playfair"
@@ -252,7 +252,7 @@ function App() {
               </a>
 
               <a
-                href={arabic_contract}
+                href="https://docs.google.com/document/d/1BpgA04ImUFK6WRxRH2fj8ppMfgFW7bbi/edit?usp=sharing&ouid=107691785626291737387&rtpof=true&sd=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer custom-playfair"
@@ -336,7 +336,7 @@ function App() {
                 <span>heartlandlinguistics@gmail.com</span>
               </li>
               <li className="flex items-center">
-                <span className="mr-3 text-white">Mailing Addr.: </span>
+                <span className="mr-3 text-white">Mail. Addr.: </span>
                 <span>15439 Glenwood Ave, Overland Park, KS 66223</span>
               </li>
             </ul>
