@@ -102,7 +102,7 @@ html, body {
   transition: all 0.2s ease-in-out;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  border: 1px solid #ffffff4e;
+  border: 1px solid #ebebeb;
   font-weight: bold;
   position: relative;
   z-index: 0;
@@ -159,7 +159,7 @@ html, body {
 .vertical-divider {
   width: 1px;
   height: 2rem;
-  background-color: #d2d2d2d4;
+  background-color: #ebebeb;
 }
 .important-words-color {
   color: #7aabcc;
