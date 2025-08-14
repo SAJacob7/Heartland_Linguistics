@@ -96,7 +96,7 @@ html, body {
   gap: 1.5rem;
 }
 
-.booking-link {
+.contact {
   font-weight: 900;
   font-size: 1.1rem;
   transition: all 0.2s ease-in-out;
@@ -108,7 +108,7 @@ html, body {
   z-index: 0;
 }
 
-.booking-link::before {
+.contact::before {
   content: '';
   position: absolute;
   top: 0;
@@ -123,7 +123,7 @@ html, body {
   z-index: -1;
 }
 
-.booking-link:hover::before {
+.contact:hover::before {
   opacity: 1;
 }
 
