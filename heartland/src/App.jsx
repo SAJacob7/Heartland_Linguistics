@@ -34,7 +34,7 @@ function TypingHeader({ text, className, id }) {
 
   return (
     <h2 id={id} className={className}>
-      Heartland{" "}
+      HEARTLAND{" "}
       {triggerTyping && (
         <ReactTyped
           strings={[text]}
@@ -175,7 +175,7 @@ function App() {
           <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 gap-8">
             <div className="w-full md:w-1/2">
               <TypingHeader 
-                text="Linguistics" 
+                text="LINGUISTICS" 
                 className="text-2xl sm:text-3xl md:text-4xl mb-4 custom-playfair-italics" 
                 id="about-typing-header"
               />
@@ -201,7 +201,7 @@ function App() {
         <section id="services" className="scroll-mt-24 w-full py-16 md:py-24 bg-gradient-to-b">
           <div className="text-center mb-12 px-6">
             <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold custom-playfair-italics text-[#7aabcc] tracking-wide animate-fade-in">
-              Our Services
+              OUR SERVICES
             </h2>
             <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-xl mx-auto">
               We offer professional language solutions tailored to your needs.
@@ -209,19 +209,19 @@ function App() {
           </div>
           <div className="box max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6">
             <div className="bg-[#7aabcc] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
-              <h3 className="custom-playfair text-xl font-semibold text-white mb-2">On-Site Interpretation</h3>
+              <h3 className="custom-playfair-italics text-xl font-semibold text-white mb-2">ON-SITE INTERPRETATION</h3>
               <p className="text-white text-sm">
                 Real-time oral interpretation services at your designated location.
               </p>
             </div>
             <div className="bg-[#7aabcc] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
-              <h3 className="custom-playfair text-xl font-semibold text-white mb-2">Remote Interpretation</h3>
+              <h3 className="custom-playfair text-xl font-semibold text-white mb-2">REMOTE INTERPRETATION</h3>
               <p className="text-white text-sm">
                 Seamless interpretation via phone or video conferencing platforms.
               </p>
             </div>
             <div className="bg-[#7aabcc] rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300">
-              <h3 className="custom-playfair text-xl font-semibold text-white mb-2">Document Translation</h3>
+              <h3 className="custom-playfair text-xl font-semibold text-white mb-2">DOCUMENT TRANSLATION</h3>
               <p className="text-white text-sm">
                 Accurate translation of legal, medical, academic, and personal documents.
               </p>
@@ -266,7 +266,7 @@ function App() {
 
         {/* Bio Section */}
         <section id="bio" className="scroll-mt-24 w-full py-16 md:py-24 px-6 md:px-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl custom-playfair-italics mb-6">About Us</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl custom-playfair-italics mb-6">ABOUT US</h2>
           <div className="max-w-5xl mx-auto">
             <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
               <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
