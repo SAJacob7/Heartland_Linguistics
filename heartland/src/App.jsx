@@ -90,81 +90,80 @@ function App() {
 
   return (
     <div className="background">
-<nav className="navbar flex flex-wrap justify-between items-center p-4 md:px-16 bg-white shadow-md sticky top-0 z-50">
-      <div className="hidden md:flex items-center justify-between w-full">
-        <div className="flex items-center space-x-4">
-          <a href="#">
-            <img src={color_logo} alt="Logo" className="h-10 w-auto" />
-          </a>
-          <div className="flex space-x-4">
-            <div className="vertical-divider"></div>
-            <a href="#about" className="nav-tab">Heartland Linguistics</a>
-            <a href="#services" className="nav-tab">Services</a>
-            <a href="#bio" className="nav-tab">About Us</a>
+      <nav className="navbar flex flex-wrap justify-between items-center p-4 md:px-16 bg-white shadow-md sticky top-0 z-50">
+        <div className="hidden md:flex items-center justify-between w-full">
+          <div className="flex items-center space-x-4">
+            <a href="#">
+              <img src={color_logo} alt="Logo" className="h-10 w-auto" />
+            </a>
+            <div className="flex space-x-4">
+              <div className="vertical-divider"></div>
+              <a href="#about" className="nav-tab">Heartland Linguistics</a>
+              <a href="#services" className="nav-tab">Services</a>
+              <a href="#bio" className="nav-tab">About Us</a>
+            </div>
           </div>
+          <a href="#contact" className="booking-link">Contact</a>
         </div>
-        <a href="#contact" className="booking-link">Contact</a>
-      </div>
 
-      <div className="md:hidden w-full flex justify-end relative">
-        <button
-          className="text-3xl focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle Menu"
-        >
-          ☰
-        </button>
+        <div className="md:hidden w-full flex justify-end relative">
+          <button
+            className="text-3xl focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle Menu"
+          >
+            ☰
+          </button>
 
-        {menuOpen && (
-          <div className="absolute right-0 top-full mt-2 w-40 bg-white bg-opacity-95 shadow-lg rounded-md py-2 z-50">
-            <a
-              href="#about"
-              className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
-              onClick={() => setMenuOpen(false)}
-            >
-              Heartland Linguistics
-            </a>
-            <a
-              href="#services"
-              className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
-              onClick={() => setMenuOpen(false)}
-            >
-              Services
-            </a>
-            <a
-              href="#bio"
-              className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
-              onClick={() => setMenuOpen(false)}
-            >
-              About Us
-            </a>
-            <a
-              href="#contact"
-              className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
-              onClick={() => setMenuOpen(false)}
-            >
-              Contact
-            </a>
-          </div>
-        )}
-      </div>
+          {menuOpen && (
+            <div className="absolute right-0 top-full mt-2 w-40 bg-white bg-opacity-95 shadow-lg rounded-md py-2 z-50">
+              <a
+                href="#about"
+                className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
+                onClick={() => setMenuOpen(false)}
+              >
+                Heartland Linguistics
+              </a>
+              <a
+                href="#services"
+                className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
+                onClick={() => setMenuOpen(false)}
+              >
+                Services
+              </a>
+              <a
+                href="#bio"
+                className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
+                onClick={() => setMenuOpen(false)}
+              >
+                About Us
+              </a>
+              <a
+                href="#contact"
+                className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact
+              </a>
+            </div>
+          )}
+        </div>
       </nav>
 
-      {/* Home Section */}
-      <header className="relative flex flex-col items-center justify-center min-h-[100vh] overflow-hidden">
+      <header className="relative flex flex-col items-center justify-center min-h-[100vh] overflow-hidden z-0">
         <div className="absolute inset-0 z-0">
           {["English", "Arabic", "کوردی", "English", "عربي", "Kurdish", "English", "عربي", "کوردی"].map((lang, index) => (
             <span key={index} className={`floating-text lang-${index}`}>{lang}</span>
           ))}
         </div>
-        <div className="absolute">
+        <div className="absolute z-0">
           <img
             src={logo}
             alt="Logo"
             className="w-[200px] sm:w-[300px] md:w-[400px] opacity-30"
           />
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl custom-playfair-italics text-[#4d91b3] text-center">
+        <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl custom-playfair-italics text-[#4d91b3] text-center">
           HEARTLAND LINGUISTICS
         </h1>
       </header>
@@ -233,12 +232,12 @@ function App() {
             </p>
           </div>
           <div className="mt-12 text-center px-6">
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <div className="box flex flex-col sm:flex-row justify-center items-center gap-4">
               <a
                 href={english_contract}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer"
+                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer custom-playfair"
               >
                 Download Contract - English
               </a>
@@ -247,7 +246,7 @@ function App() {
                 href={kurdish_contract}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer"
+                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer custom-playfair"
               >
                 Download Contract - Kurdish
               </a>
@@ -256,7 +255,7 @@ function App() {
                 href={arabic_contract}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer"
+                className="bg-[#334d5f] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#7aabcc] transition cursor-pointer custom-playfair"
               >
                 Download Contract - Arabic
               </a>
@@ -269,7 +268,7 @@ function App() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl custom-playfair-italics mb-6">ABOUT US</h2>
           <div className="max-w-5xl mx-auto">
             <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
-              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 custom-playfair">
                 Saya Ahmed - Owner & CEO
               </h3>
 
@@ -294,7 +293,7 @@ function App() {
           </div>
           <div className="max-w-5xl mx-auto pt-15">
             <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
-              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 custom-playfair">
                 Dr. Hiba E. Gharib - Lead Translator & Interpreter
               </h3>
 
@@ -319,7 +318,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <footer id="contact" className="text-white pt-16 pb-8 px-6 md:px-20 lg:px-32">
+      <footer id="contact" className="text-white pt-16 pb-8 px-6 md:px-20 lg:px-32 rounded-t-[4rem]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-700 pb-10">
           <div>
             <h3 className="custom-playfair-italics text-2xl font-semibold mb-4 text-white">CONTACT</h3>
