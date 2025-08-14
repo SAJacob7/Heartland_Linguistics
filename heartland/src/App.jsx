@@ -109,9 +109,16 @@ function App() {
         </div>
 
         {/* Mobile Navbar */}
-        <div className="md:hidden w-full flex justify-end relative">
+        <div className="md:hidden w-full flex items-center justify-between px-0 py-0 relative">
+          
+          <div className = "flex items-center">
+            <a href="#">
+              <img src={color_logo} alt="Logo" className="h-8 w-auto" />
+            </a>
+          </div>
+
           <button
-            className="text-3xl focus:outline-none"
+            className="text-2xl focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle Menu"
           >
