@@ -90,8 +90,10 @@ function App() {
 
   return (
     <div className="background">
-      <nav className="navbar flex flex-wrap justify-between items-center p-4 md:px-16 bg-white shadow-md sticky top-0 z-50">
-        <div className="hidden md:flex items-center justify-between w-full">
+
+<nav className="navbar flex flex-wrap justify-between items-center p-4 md:px-16 bg-white shadow-md sticky top-0 z-50">
+      {/* Desktop Navbar */}
+      <div className="hidden md:flex items-center justify-between w-full">
           <div className="flex items-center space-x-4">
             <a href="#">
               <img src={color_logo} alt="Logo" className="h-10 w-auto" />
@@ -106,6 +108,7 @@ function App() {
           <a href="#contact" className="booking-link">Contact</a>
         </div>
 
+        {/* Mobile Navbar */}
         <div className="md:hidden w-full flex justify-end relative">
           <button
             className="text-3xl focus:outline-none"
@@ -150,20 +153,21 @@ function App() {
         </div>
       </nav>
 
-      <header className="relative flex flex-col items-center justify-center min-h-[100vh] overflow-hidden z-0">
-        <div className="absolute inset-0 z-0">
+      {/* Home Section */}
+      <header className="relative flex flex-col items-center justify-center min-h-[100vh] overflow-hidden">
+        <div className="absolute inset-0">
           {["English", "Arabic", "کوردی", "English", "عربي", "Kurdish", "English", "عربي", "کوردی"].map((lang, index) => (
             <span key={index} className={`floating-text lang-${index}`}>{lang}</span>
           ))}
         </div>
-        <div className="absolute z-0">
+        <div className="absolute">
           <img
             src={logo}
             alt="Logo"
             className="w-[200px] sm:w-[300px] md:w-[400px] opacity-30"
           />
         </div>
-        <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl custom-playfair-italics text-[#4d91b3] text-center">
+        <h1 className="relative text-4xl sm:text-5xl md:text-6xl custom-playfair-italics text-[#4d91b3] text-center">
           HEARTLAND LINGUISTICS
         </h1>
       </header>
