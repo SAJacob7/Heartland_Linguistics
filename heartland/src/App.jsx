@@ -128,6 +128,13 @@ function App() {
           {menuOpen && (
             <div className="absolute right-0 top-full mt-2 w-40 bg-white bg-opacity-95 shadow-lg rounded-md py-2 z-50">
               <a
+                href="#contact"
+                className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact
+              </a>
+              <a
                 href="#about"
                 className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
                 onClick={() => setMenuOpen(false)}
@@ -147,13 +154,6 @@ function App() {
                 onClick={() => setMenuOpen(false)}
               >
                 About Us
-              </a>
-              <a
-                href="#contact"
-                className="block px-4 py-2 text-gray-800 hover:text-[#334d5f]"
-                onClick={() => setMenuOpen(false)}
-              >
-                Contact
               </a>
             </div>
           )}
@@ -193,9 +193,31 @@ function App() {
                 Heartland Linguistics is a family-owned language service provider specializing in
                 <strong className="important-words-color"> Kurdish, Arabic, and English. </strong>
                 Founded and operated by a mother-daughter team, we deliver
-                <strong className="important-words-color"> ATA-certified translation</strong> and professional interpretation for on-site, remote (Zoom), and recorded formats.
+                <strong className="important-words-color"> ATA-certified translation</strong> and <strong className="important-words-color">professional interpretation for on-site, remote (Zoom), and recorded formats. </strong>
                 Our services include document, video, and audio translation, as well as real-time interpretation for legal, medical, business, and community settings. We are committed to providing accurate, culturally informed communication solutions.
               </p>
+              <h2 className="text-3xl sm:text-4xl md:text-4xl pt-12 font-bold custom-playfair-italics text-[#7aabcc] tracking-wide animate-fade-in">
+              OUR BELOVED CLIENTS
+              </h2>
+               <ul className="mt-6 space-y-4">
+  {[
+    { title: "Government", description: "DMV, immigration offices, city and county agencies", width: "w-[160px]" },
+    { title: "Healthcare", description: "Hospitals, clinics, public health departments", width: "w-[160px]" },
+    { title: "Legal", description: "Law firms, court systems, legal aid organizations", width: "w-[160px]" },
+    { title: "Education", description: "Private universities, public schools, ESL and adult education programs", width: "w-[130px]" },
+    { title: "Business", description: "International companies, HR and corporate communications teams", width: "w-[140px]" },
+    { title: "Community & Nonprofit", description: "Refugee and immigrant support programs, cultural and faith-based organizations", width: "w-[160px]" },
+  ].map((item, index) => (
+    <li key={index} className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
+      <span className={`font-bold custom-playfair text-[#7aabcc] ${item.width} shrink-0`}>
+        {item.title}
+      </span>
+      <span className="text-gray-700">{item.description}</span>
+    </li>
+  ))}
+</ul>
+
+
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center">
               <img
@@ -280,31 +302,6 @@ function App() {
           <div className="max-w-5xl mx-auto">
             <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
               <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 custom-playfair">
-                Saya Ahmed - Owner & CEO
-              </h3>
-
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-                Saya A. founded Heartland Linguistics with a clear mission: to serve communities both locally and abroad by providing outstanding,
-                trustworthy language services delivered by reliable professionals. Fluent in Kurdish and recognized with a Gold Seal of Biliteracy,
-                Saya combines linguistic skill with a deep passion for bridging communication gaps and breaking down barriers.
-              </p>
-
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-              Currently pursuing her Doctor of Pharmacy degree and consistently earning Dean's Honor Roll status,
-              Saya brings exceptional attention to detail—sharpened through her experience as a pharmacy intern—to every client interaction.
-              As President of the International Pharmacy Student Club at her university, she revitalized the organization in a single summer, demonstrating her vision, leadership, and ability to transform ideas into results.
-              </p>
-
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-              What sets Heartland Linguistics apart is its foundation as a
-              family-run business with first-hand experience in the challenges of cross-language communication.
-              Saya's global upbringing and extensive travel have shaped her into a true global citizen, dedicated to building long-term relationships with clients and delivering solutions that are accurate, culturally informed, and deeply personal.
-              </p>
-            </div>
-          </div>
-          <div className="max-w-5xl mx-auto pt-15">
-            <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
-              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 custom-playfair">
                 Dr. Hiba E. Gharib - Lead Translator & Interpreter
               </h3>
 
@@ -322,6 +319,18 @@ function App() {
 
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 A certified TESOL instructor and active member of MICATA, ATA, and the Arab Translators Association, Dr. Gharib is committed to accuracy, confidentiality, and bridging communication gaps for every client she serves.
+              </p>
+            </div>
+          </div>
+          <div className="max-w-5xl mx-auto pt-15">
+            <div className="bg-gray-50 rounded-3xl shadow-lg p-8 md:p-12 image-border">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 custom-playfair">
+                Saya Ahmed - Founder
+              </h3>
+
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                Saya A. founded Heartland Linguistics to connect communities locally and globally through precise, culturally informed language services. Fluent in Kurdish and a Gold Seal of Biliteracy recipient, she blends linguistic expertise with a passion for removing communication barriers.
+                As a family-run business with first-hand experience in cross-language challenges, Heartland Linguistics offers more than translations—it delivers trust, accuracy, and lasting client relationships shaped by Saya's global perspective and extensive travel.
               </p>
             </div>
           </div>
@@ -346,18 +355,15 @@ function App() {
                 <span className="mr-3 text-white font-bold">Email: </span>
                 <span>heartlandlinguistics@gmail.com</span>
               </li>
-              <li className="flex items-center">
-                <span className="mr-3 text-white font-bold">Addr.: </span>
-                <span>15439 Glenwood Ave, Overland Park, KS 66223</span>
-              </li>
             </ul>
           </div>
           <div>
             <h4 className="custom-playfair-italics text-2xl font-semibold mb-4 text-white">CONNECT</h4>
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-3 text-gray-300 text-left">
               <li>
+                <span className="mr-3 text-white font-bold">Socials: </span>
                 <a href="https://www.linkedin.com/in/hiba-gharib-446512131/" target="_blank"
-                rel="noopener noreferrer" className="hover:text-[#334d5f] transition">LinkedIn</a>
+                rel="noopener noreferrer" className="hover:text-[#334d5f] transition"> LinkedIn</a>
               </li>
             </ul>
           </div>
